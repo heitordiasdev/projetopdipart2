@@ -26,7 +26,7 @@ ret, thresh2 = cv.threshold(img, 127, 255, cv.THRESH_BINARY_INV)
 # THRESH_TOZERO irá setar para 0 quando o valor do pixel for menor que o limite
 ret, thresh3 = cv.threshold(img, 127, 255, cv.THRESH_TOZERO)
 
-# THRESH_TOZERO irá setar os valores que passar do limite para o seu próprio valor passado, nesse caso "127"
+# THRESH_TRUNC irá setar os valores que passar do limite para o seu próprio valor passado, nesse caso "127"
 # o restante permaneceram os mesmos
 ret, thresh4 = cv.threshold(img, 127, 255, cv.THRESH_TRUNC)
 
